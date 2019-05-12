@@ -1,6 +1,6 @@
 require 'watir'
 
-b = Watir::Browser.new 
+b = Watir::Browser.new :chrome, headless: true
 b.goto "http://example.com/"
 
 puts b.url
